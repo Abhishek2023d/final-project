@@ -1,0 +1,232 @@
+*{
+    margin: auto;
+}
+body{
+    background-image: url('back.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.logo img{
+    border-radius: 50%;
+}
+#logoImg{
+    animation: image;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    transition: .5s ease-in-out;
+}
+@keyframes image {
+    50%{
+        opacity: 0.5;
+    }
+    /* 0%{
+        width: 150px;
+        height: 150px;
+    }
+    50%{
+        width: 153px;
+        height: 153px;
+    }
+    100%{
+        width: 150px;
+        height: 150px;
+    } */
+}
+.head{
+    background-color: rgb(205, 204, 204);
+    height: 30px;
+    text-align: center;
+}
+.head ul{
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    justify-content: space-around;
+}
+.head ul li{
+    list-style: none;
+    margin-top: 7px;
+}
+.head ul li a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.head ul li a:hover{
+    color: yellow;
+    transition: .5s;
+    background-color: black;
+    border-radius: 8px;
+    padding: 8px;
+}
+.container{
+    display: flex;
+}
+.container_div2{
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    margin: 1em 0;
+}
+
+.trainers{
+    height: 900px;
+    text-align: center;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.trainers h3{
+    font-size: 20px;
+    border-bottom: 2px solid wheat;
+}
+.trainers img{
+    border-radius: 50%;
+    vertical-align: middle;
+}
+.trainersDiv1{
+    background-color: #e80b0b;
+    width: 300px;
+    height: 500px;
+}
+.trainersDiv1:hover{
+    box-shadow: 10px 10px 5px #aaaaaa;
+    transition: .5s;
+}
+.trainersDiv2{
+    background-color: #63e80b;
+    width: 200px;
+    height: 200px;
+}
+.trainersDiv3{
+    background-color: #3f0be8;
+    width: 200px;
+    height: 200px;
+}
+.trainersDiv4{
+    background-color: #e80bd6;
+    width: 200px;
+    height: 200px;
+}
+.trainersDiv5{
+    background-color: #0bd6e8;
+    width: 200px;
+    height: 200px;
+}
+.bodyDiv{
+    align-items: center;
+    text-align: center;
+}
+.bodyDiv img{
+    border-radius: 65px;
+}
+
+@media screen and (max-width: 1050px) {
+    .bodyDiv img{
+        width: 600px;
+        height: 600px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .bodyDiv img{
+        width: 400px;
+        height: 400px;
+    }
+    .textDiv h1{
+        font-size: 20px;
+    }
+    .head ul li a{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 559px) {
+    .textDiv{
+        width: 200px;
+        height: 300px;
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .head ul li a{
+        font-size: 10px;
+    }
+    .bodyDiv img{
+        width: 300px;
+        height: 300px;
+    }
+}
+
+.textDiv{
+    text-align: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1.5px;
+    padding: 30px;
+    text-align: justify;
+}
+.textDiv h1{
+    color: #221551;
+}
+.textDiv button{
+    border-radius: 8%;
+    border: none;
+    background-color: #03f9dd;
+    text-align: center;
+    height: 50px;
+    transition: .5s ease-in-out;
+}
+.textDiv button a{
+    text-decoration: none;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.textDiv button:hover{
+    background-color: #a7a9a8;
+    transition: .5s ease-in-out;
+    box-shadow: 5px 10px;
+}
+.singinForm{
+    background-color: #e4f901;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.singinForm input{
+    width: 400px;
+    height: 30px;
+    border: none;
+}
+.singinForm #btn{
+    width: 100px;
+}
+.singinForm input:hover{
+    background-color: rgb(159, 212, 174);
+    transition: .5s;
+}
+.div1{
+    width: 500px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.para1{
+    width: 500px;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+.para h2{
+    color: rgb(237, 103, 0);
+    border-bottom: 2px solid rgb(237, 103, 0);
+    font-size: 50px;
+}
+.para2{
+    width: 1000px;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    line-height: 27px;
+}
